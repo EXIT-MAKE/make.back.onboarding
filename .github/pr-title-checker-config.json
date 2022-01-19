@@ -1,0 +1,11 @@
+{
+  "LABEL": {
+    "name": "title needs formatting",
+    "color": "EEEEEE"
+  },
+  "CHECKS": {
+    "prefixes": ["hotfix/", "release/"],
+    "regexp": "^\\([a-zA-Z]+\\-[0-9]+\\)",
+    "ignoreLabels" : ["dont-check-title"]
+  }
+}
