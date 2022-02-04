@@ -59,7 +59,10 @@ MAKE의 서버아키텍처를 직접 만들어볼까요? </br>
 ```
 
 1. 서버 API를 개발합니다.
-   1. 서버는 Nestjs 또는 원하시는 프레임워크를 사용해도 무방합니다.
+   1. 서버는 NestJS 또는 원하시는 프레임워크를 사용해도 무방합니다.
+      - NestJS를 처음 사용하는 경우
+         - [공식문서](https://docs.nestjs.com/)를 참고합니다.
+         - 또는, [카일의 NestJS 강의](https://inf.run/ZJmp) 섹션 3까지 수강 후에 다음 단계를 진행합니다.
    2. `/hello GET` 요청을 보내면 "Hello World"로 응답하는 API를 개발합니다.
    3. `healthy GET` 요청을 보내면 200 상태 코드로 응답하는 Health check를 위한 API를 개발합니다.
 2. EC2 인스턴스를 생성하고 서버를 배포합니다.
@@ -68,6 +71,7 @@ MAKE의 서버아키텍처를 직접 만들어볼까요? </br>
    3. VPC와 서브넷은 각각 **make-server::vpc**와 **make-server::public-subnet**을 사용합니다.
    4. 보안 그룹은 직접 생성해서 사용합니다.
    5. 그 외 기타 설정은 기본값을 사용하되 필요에 따라 변경할 수 있습니다.
+   6. 인스턴스 내부 셋팅은 ["밑바닥부터 우분투 서버 셋팅하기"](https://www.notion.so/makecoding/b0fc320e9a4c4c01b0abc3fc7c662f52)를 참고합니다.
 3. [닉네임].make-api.co 의 형태로 서브도메인을 구성합니다. (ex: danny.make-api.co)
    1. **\*.make-api.co** 도메인에 이미 SSL 인증은 적용되어 있습니다.
    2. 대상그룹에서 위에서 배포한 EC2 인스턴스를 대상으로 등록합니다.
