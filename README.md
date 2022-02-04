@@ -237,3 +237,4 @@ CEO Monday는 개발팀의 고충을 알기 위해 직접 웹사이트를 만들
 
 - serverless Framework
 - AWS Lambda
+- [금😎 알못](https://www.notion.so/makecoding/e33283456b704378884470c09404ca70)
