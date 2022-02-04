@@ -1,0 +1,14 @@
+addReviewers: true
+
+addAssignees: author
+
+reviewers:
+  - amamov
+  - JungJinuk
+  - moosongsong
+  - Jiwook00
+
+skipKeywords:
+  - wip
+
+numberOfReviewers: 0
